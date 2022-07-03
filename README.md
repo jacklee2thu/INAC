@@ -19,6 +19,14 @@ we also recommend reading the [publication]() to get a better idea of what INAC 
 |INAC_ML|machine learning|feature matrix|model performance of each feature|
 the details and usage of INAC functions are shown in the [full manuals](https://github.com/jacklee2thu/INAC/blob/main/Full%20manuals.md).
 
-## INAC citations
+## INAC citation
 
 Jie Li, Xun Lan.2022-7. Integrated analysis toolkit for dissecting whole genome wide features of cell-free DNA
+
+## INAC license
+
+RECIPIENT acknowledges that the Program is a research tool still in the development stage and that it is being supplied as is, without any accompanying services, support, or improvements.Any accompanying information, materials, or manuals, free of charge for non-commercial use only and bound by the above license agreement.
+
+RECIPIENT shall not use the Program on behalf of any organization that is not a non-profit organization. RECIPIENT shall not use the Program for commercial advantage, or in the course of for-profit activities. This Agreement provides no license, express or implied, under any patent (i) to any organization that is not a non-profit research organization; (ii) to use the Program on behalf of any for-profit entity; or (iii) to use the Program for any commercial purpose. The use of the Program by, or on behalf of, any for-profit entity will terminate any and all licenses, express or implied, granted by Tsinghua university under this Agreement.
+
+

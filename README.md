@@ -9,3 +9,4 @@ Patterns in whole genome wide features of cell-free DNA (cfDNA) in human plasma 
 
 |Function name|Type|Input files|main out|
 |---:|:---:|:---:|:---:|
+![](https://github.com/jacklee2thu/INAC/blob/main/image/table.txt)

@@ -8,5 +8,16 @@ Patterns in whole genome wide features of cell-free DNA (cfDNA) in human plasma 
 ## INAC functions
 
 |Function name|Type|Input files|main out|
-|---:|:---:|:---:|:---:|
-![](https://github.com/jacklee2thu/INAC/blob/main/image/table.txt)
+|:--:|:--:|:--:|:--:|
+|INAC_QC|QC|BAM|the fraction of cfDNA fragment size on 30-80, 80-150, 150-220, 220-1000, 1000-longer (bp)|
+|INAC_FR|Feature|BAM|the counts and fraction of short and long cfDNA fragments on whole genome wide|
+|INAC_CNV|Feature|BAM|the number of copy number variance of cfDNA on whole genome wide|
+|INAC_TSS_NDR|Feature|BAM|the relative coverage of NDR around TSS locations|
+|INAC_TSS_2K|Feature|BAM|the relative coverage of 2K region around TSS locations|
+|INAC_PFE|Feature|BAM|the PFE values around TSS locations|
+|INAC_ML|machine learning|feature matrix|model performance of each feature|
+the details and usage of INAC functions are shown in the [full manuals]().
+
+## INAC citations
+
+Jie Li, Xun Lan.2022-7. Integrated analysis toolkit for dissecting whole genome wide features of cell-free DNA

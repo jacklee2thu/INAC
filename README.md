@@ -16,7 +16,7 @@ Patterns in whole genome wide features of cell-free DNA (cfDNA) in human plasma 
 |INAC_TSS_2K|Feature|BAM|the relative coverage of 2K region around TSS locations|
 |INAC_PFE|Feature|BAM|the PFE values around TSS locations|
 |INAC_ML|machine learning|feature matrix|model performance of each feature|
-the details and usage of INAC functions are shown in the [full manuals]().
+the details and usage of INAC functions are shown in the [full manuals](https://github.com/jacklee2thu/INAC/blob/main/Full%20manuals.md).
 
 ## INAC citations
 

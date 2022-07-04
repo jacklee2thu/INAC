@@ -22,36 +22,35 @@ Taking into consideration of large BAM file size of cfDNA sequencing files and l
 
 ##### Usage
 INAC_initial_QC(sample_name,input_dir,output_dir,samtools)  
-sample_name  
+##### Arguments
+sample_name  the name of BAM file
 input_dir  
 output_dir  
 samtools  
 
-##### output
+##### output file
+1.[sample_name_coverage.txt]() the text file contains the cfDNA genome mapped reads count, coverage, mean depth, mean MAPQ in all chromatins.  
+2.[Initial_QC.pdf]() the four barplots contain the cfDNA genome mapped reads count, coverage, mean depth, mean MAPQ in 24 chromatin and mitochondria.
+
+##### Examples
+Rscript INAC_initial_QC.R sample_name,input_dir,output_dir,samtools
 
 
-Examples
-data(example_counts, package = "chromVAR")
-# show example on small part of data 
-subset_counts <- example_counts[1:500,]
-library(BSgenome.Hsapiens.UCSC.hg19)
-example_counts <- addGCBias(subset_counts, 
-                              genome = BSgenome.Hsapiens.UCSC.hg19)
-
-### [INAC_initial_QC]()
+### [INAC_QC]()
 ##### Description
-‘INAC_initial_QC’ could indicate cfDNA human genome mapped reads count, coverage, mean depth, mean MAPQ in 24 chromatin and mitochondria, and the fraction of cfDNA fragment size on 30-80, 80-150, 150-220, 220-1000, 1000-longer (bp).
+‘INAC_QC’ could indicate the fraction of cfDNA fragment size on 30-80, 80-150, 150-220, 220-1000, 1000-longer (bp).
 
-Usage
-addGCBias(object, ...)
+##### Usage
+INAC_QC(sample_name,input_dir,output_dir,samtools)
+##### Arguments
+sample_name  the name of BAM file
+input_dir  
+output_dir  
+samtools  
 
-output
-(Ranged)SummarizedExperiment object with new column in row metadata with the gc content of the peak in question
+##### output file
+1.[sample_name_coverage.txt]() the text file contains the cfDNA genome mapped reads count, coverage, mean depth, mean MAPQ in all chromatins.
+2. [Initial_QC.pdf]()the four barplots contain the cfDNA genome mapped reads count, coverage, mean depth, mean MAPQ in 24 chromatin and mitochondria.
 
-Examples
-data(example_counts, package = "chromVAR")
-# show example on small part of data 
-subset_counts <- example_counts[1:500,]
-library(BSgenome.Hsapiens.UCSC.hg19)
-example_counts <- addGCBias(subset_counts, 
-                              genome = BSgenome.Hsapiens.UCSC.hg19)
+##### Examples
+Rscript INAC_initial_QC.R sample_name,input_dir,output_dir,samtools

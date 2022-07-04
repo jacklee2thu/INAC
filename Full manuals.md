@@ -21,20 +21,23 @@ Taking into consideration of large BAM file size of cfDNA sequencing files and l
 ‘INAC_initial_QC’ could indicate cfDNA genome mapped reads count, coverage, mean depth, mean MAPQ in 24 chromatin and mitochondria.
 
 ##### Usage
-INAC_initial_QC(sample_name,input_dir,output_dir,samtools)  
+INAC_initial_QC (sample_name,input_dir,output_dir,samtools)  
 ##### Arguments
-sample_name  the name of BAM file
-input_dir  
-output_dir  
-samtools  
+|arguments|meaning|
+|:--:|:--:|
+|sample_name|the name of BAM file|
+|input_dir|the dir path of BAM file|
+|output_dir|the output file path of BAM file|  
+|samtools|the path of samtools|
 
 ##### output file
-1.[sample_name_coverage.txt]() the text file contains the cfDNA genome mapped reads count, coverage, mean depth, mean MAPQ in all chromatins.  
-2.[Initial_QC.pdf]() the four barplots contain the cfDNA genome mapped reads count, coverage, mean depth, mean MAPQ in 24 chromatin and mitochondria.
+1. [sample_name_coverage.txt]() the text file contains the cfDNA genome mapped reads count, coverage, mean depth, mean MAPQ in all chromatins.  
+2. [Initial_QC.pdf]() the four barplots contain the cfDNA genome mapped reads count, coverage, mean depth, mean MAPQ in 24 chromatin and mitochondria.
 
 ##### Examples
+```
 Rscript INAC_initial_QC.R sample_name,input_dir,output_dir,samtools
-
+```
 
 ### [INAC_QC]()
 ##### Description
@@ -54,3 +57,4 @@ samtools
 
 ##### Examples
 Rscript INAC_initial_QC.R sample_name,input_dir,output_dir,samtools
+

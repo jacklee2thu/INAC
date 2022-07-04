@@ -1,3 +1,0 @@
-Tool name	Type	Input files	Main output	Application
-bamCorrelate	QC	2 or more BAM	Clustered heatmap of similarity measures	Determine Pearson or Spearman correlations between read distributions
-bamFingerprint	QC	2 BAM	Diagnostic plot	Assess enrichment strength of a ChIP-seq sample versus a control

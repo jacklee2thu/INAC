@@ -4,9 +4,9 @@
 ## INAC function
 Taking into consideration of large BAM file size of cfDNA sequencing files and long running process, We used a downsample example cfDNA BAM file to show the input and output of INAC function. Of course, the final processed output files of each feature also be supported in the [Datasets](https://github.com/jacklee2thu/INAC/tree/main/Datasets). (Part of INAC functions is designed to be run on Unix-based operating systems such as macOS and linux)
 
-### [INAC_QC]()
+### [INAC_initial_QC]()
 ##### Description
-‘INAC_QC’ could indicate cfDNA human genome mapped reads count, coverage, mean depth, mean MAPQ in 24 chromatin and mitochondria, and the fraction of cfDNA fragment size on 30-80, 80-150, 150-220, 220-1000, 1000-longer (bp).
+‘INAC_initial_QC’ could indicate cfDNA human genome mapped reads count, coverage, mean depth, mean MAPQ in 24 chromatin and mitochondria, and the fraction of cfDNA fragment size on 30-80, 80-150, 150-220, 220-1000, 1000-longer (bp).
 
 Usage
 addGCBias(object, ...)

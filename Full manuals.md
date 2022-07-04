@@ -6,13 +6,37 @@ Taking into consideration of large BAM file size of cfDNA sequencing files and l
 
 |Function name|Type|Input files|main out|
 |:--:|:--:|:--:|:--:|
-|[INAC_QC](#inac_initial_qc)|QC|BAM|the fraction of cfDNA fragment size on 30-80, 80-150, 150-220, 220-1000, 1000-longer (bp)|
+|[INAC_initial_QC](#inac_initial_qc)|QC|BAM|the mapped reads count, coverage, mean depth, mean MAPQ in 24 chromatin and mitochondria|
+|[INAC_QC](#inac_qc)|QC|BAM|the fraction of cfDNA fragment size on 30-80, 80-150, 150-220, 220-1000, 1000-longer (bp)|
 |INAC_FR|Feature|BAM|the counts and fraction of short and long cfDNA fragments on whole genome wide|
 |INAC_CNV|Feature|BAM|the number of copy number variance of cfDNA on whole genome wide|
 |INAC_TSS_NDR|Feature|BAM|the relative coverage of NDR around TSS locations|
 |INAC_TSS_2K|Feature|BAM|the relative coverage of 2K region around TSS locations|
 |INAC_PFE|Feature|BAM|the PFE values around TSS locations|
 |INAC_ML|machine learning|feature matrix|model performance of each feature|
+
+
+### [INAC_initial_QC]()
+##### Description
+‘INAC_initial_QC’ could indicate cfDNA genome mapped reads count, coverage, mean depth, mean MAPQ in 24 chromatin and mitochondria.
+
+##### Usage
+INAC_initial_QC(sample_name,input_dir,output_dir,samtools)  
+sample_name  
+input_dir  
+output_dir  
+samtools  
+
+##### output
+
+
+Examples
+data(example_counts, package = "chromVAR")
+# show example on small part of data 
+subset_counts <- example_counts[1:500,]
+library(BSgenome.Hsapiens.UCSC.hg19)
+example_counts <- addGCBias(subset_counts, 
+                              genome = BSgenome.Hsapiens.UCSC.hg19)
 
 ### [INAC_initial_QC]()
 ##### Description

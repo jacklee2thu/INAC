@@ -31,8 +31,8 @@ INAC_initial_QC (sample_name,input_dir,output_dir,samtools)
 |samtools|the path of samtools|
 
 ##### output file
-1. [sample_name_coverage.txt]() the text file contains the cfDNA genome mapped reads count, coverage, mean depth, mean MAPQ in all chromatins.  
-2. [Initial_QC.pdf]() the four barplots contain the cfDNA genome mapped reads count, coverage, mean depth, mean MAPQ in 24 chromatin and mitochondria.
+1. [sample_name_coverage.txt](https://github.com/jacklee2thu/INAC/blob/main/Datasets/LJ_10_12_he_coverage.txt) the text file contains the cfDNA genome mapped reads count, coverage, mean depth, mean MAPQ in all chromatins.  
+2. [Initial_QC.pdf](https://github.com/jacklee2thu/INAC/blob/main/Datasets/Initial_QC.pdf) the four barplots contain the cfDNA genome mapped reads count, coverage, mean depth, mean MAPQ in 24 chromatin and mitochondria.
 
 ##### Examples
 ```

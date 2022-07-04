@@ -39,12 +39,12 @@ INAC_initial_QC (sample_name,input_dir,output_dir,samtools)
 Rscript INAC_initial_QC.R sample_name,input_dir,output_dir,samtools
 ```
 
-### [INAC_QC]()
+### [INAC_QC](https://github.com/jacklee2thu/INAC/blob/main/Rscripts/INAC_QC.R)
 ##### Description
 ‘INAC_QC’ could indicate the fraction of cfDNA fragment size on 30-80, 80-150, 150-220, 220-1000, 1000-longer (bp).
 
 ##### Usage
-INAC_QC(sample_name,input_dir,output_dir,samtools)
+INAC_QC(sample_name,input_dir,output_dir,samtools,consensusBlacklist)
 ##### Arguments
 |arguments|meaning|
 |:--:|:--:|
@@ -52,14 +52,15 @@ INAC_QC(sample_name,input_dir,output_dir,samtools)
 |input_dir|the dir path of BAM file|
 |output_dir|the output file path of BAM file|  
 |samtools|the path of samtools|
+|[consensusBlacklist](https://github.com/jacklee2thu/INAC/blob/main/materials/consensusBlacklist.txt)|consensus Blacklist in the materials|
 
 ##### output file
-1. [sample_name_coverage.txt]() the text file contains the cfDNA genome mapped reads count, coverage, mean depth, mean MAPQ in all chromatins.  
-2. [Initial_QC.pdf]() the four barplots contain the cfDNA genome mapped reads count, coverage, mean depth, mean MAPQ in 24 chromatin and mitochondria.
+1. [cfDNA_density.pdf](https://github.com/jacklee2thu/INAC/blob/main/Datasets/cfDNA_density.pdf) the cfDNA fragment size density plot om 0-500 bp.  
+2. [INAC_fraction_QC_barplot.pdf](https://github.com/jacklee2thu/INAC/blob/main/Datasets/INAC_fraction_QC_barplot.pdf) the fraction of cfDNA fragment size on 30-80, 80-150, 150-220, 220-1000, 1000-longer (bp).
 
 ##### Examples
 ```
-Rscript INAC_initial_QC.R sample_name,input_dir,output_dir,samtools
+Rscript INAC_QC.R sample_name,input_dir,output_dir,samtools,consensusBlacklist
 ```
 
 

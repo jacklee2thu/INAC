@@ -127,7 +127,7 @@ INAC_CNV (sample_name, input_dir, output_dir, samtools, consensusBlacklist, bin_
 |samtools|the path of samtools|
 |[consensusBlacklist](https://github.com/jacklee2thu/INAC/blob/main/materials/consensusBlacklist.txt)|consensus Blacklist in the materials|
 |[bin_gc](https://github.com/jacklee2thu/INAC/blob/main/materials/bin_gc.txt)|50 kb bins bed file in the materials|
-|[healthy_standard_copy](https://github.com/jacklee2thu/INAC/blob/main/materials/healthy_standard_copy.Rdata)|golden standard of healthy controls|
+|[healthy_standard_copy](https://github.com/jacklee2thu/INAC/blob/main/materials/healthy_standard_copy.Rdata)|golden standard file of healthy controls in the materials|
 
 ##### output file
 1. [gastric_copy_number_table.Rdata](https://github.com/jacklee2thu/INAC/blob/main/Datasets/gastric_copy_number_table.Rdata) a sample value of log2 transformed copy number variance in each 50 kb on whole genome wide.  

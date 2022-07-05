@@ -168,7 +168,61 @@ Rscript INAC_TSS_NDR sample_name, input_dir, output_dir, samtools, tss_bed_up300
 ```
 
 
+### [INAC_TSS_2K](https://github.com/jacklee2thu/INAC/blob/main/Rscripts/INAC_TSS_2K.R)
+##### Description
+‘INAC_TSS_2K’ could indicate the relative coverage of 2K region around TSS locations.
+
+##### Usage
+INAC_TSS_2K (sample_name, input_dir, output_dir, samtools, tss_bed_up3000_1000, tss_bed_down1000_3000, tss_bed_up1000_down1000, tss_bed_up150_down50, tss_pro_table)
+##### Arguments
+|arguments|meaning|
+|:--:|:--:|
+|sample_name|the name of BAM file|
+|input_dir|the dir path of BAM file|
+|output_dir|the output file path of the relative coverage of 2K region file|
+|samtools|the path of samtools|
+|[tss_bed_up3000_1000](https://github.com/jacklee2thu/INAC/blob/main/materials/tss_bed_up3000_1000.bed)|the bed file contains upstream 3000 bp to downstream 1000 bp relative to TSS locations|
+|[tss_bed_down1000_3000](https://github.com/jacklee2thu/INAC/blob/main/materials/tss_bed_down1000_3000.bed)|the bed file contains upstream 1000 bp to downstream 3000 bp relative to TSS locations|
+|[tss_bed_up1000_down1000](https://github.com/jacklee2thu/INAC/blob/main/materials/tss_bed_up1000_down1000.bed)|the bed file contains upstream 1000 bp to downstream 1000 bp relative to TSS locations|
+|[tss_bed_up150_down50](https://github.com/jacklee2thu/INAC/blob/main/materials/tss_bed_up150_down50.bed)|the bed file contains upstream 150 bp to downstream 50 bp relative to TSS locations|
+|[tss_pro_table](https://github.com/jacklee2thu/INAC/blob/main/materials/tss_pro_table.Rdata)|TSS locations information|
+
+##### output file
+1. [sample_name_tss_2K.Rdata](https://github.com/jacklee2thu/INAC/blob/main/Datasets/sample_name_tss_2K.Rdata) a sample value of the relative coverage of 2K region around TSS locations on whole genome wide.  
 
 
+##### Examples
+```
+Rscript INAC_TSS_2K sample_name, input_dir, output_dir, samtools, tss_bed_up3000_1000, tss_bed_down1000_3000, tss_bed_up1000_down1000, tss_bed_up150_down50, tss_pro_table
+```
+
+
+### [INAC_PFE](https://github.com/jacklee2thu/INAC/blob/main/Rscripts/INAC_PFE.R)
+##### Description
+‘INAC_PFE’ could indicate the PFE values around TSS locations.
+
+##### Usage
+INAC_PFE (sample_name, input_dir, output_dir, samtools, tss_bed_up3000_1000, tss_bed_down1000_3000, tss_bed_up1000_down1000, tss_bed_up150_down50, tss_pro_table)
+##### Arguments
+|arguments|meaning|
+|:--:|:--:|
+|sample_name|the name of BAM file|
+|input_dir|the dir path of BAM file|
+|output_dir|the output file path of the relative coverage of 2K region file|
+|samtools|the path of samtools|
+|[tss_bed_up3000_1000](https://github.com/jacklee2thu/INAC/blob/main/materials/tss_bed_up3000_1000.bed)|the bed file contains upstream 3000 bp to downstream 1000 bp relative to TSS locations|
+|[tss_bed_down1000_3000](https://github.com/jacklee2thu/INAC/blob/main/materials/tss_bed_down1000_3000.bed)|the bed file contains upstream 1000 bp to downstream 3000 bp relative to TSS locations|
+|[tss_bed_up1000_down1000](https://github.com/jacklee2thu/INAC/blob/main/materials/tss_bed_up1000_down1000.bed)|the bed file contains upstream 1000 bp to downstream 1000 bp relative to TSS locations|
+|[tss_bed_up150_down50](https://github.com/jacklee2thu/INAC/blob/main/materials/tss_bed_up150_down50.bed)|the bed file contains upstream 150 bp to downstream 50 bp relative to TSS locations|
+|[tss_pro_table](https://github.com/jacklee2thu/INAC/blob/main/materials/tss_pro_table.Rdata)|TSS locations information|
+
+##### output file
+1. [sample_name_tss_2K.Rdata](https://github.com/jacklee2thu/INAC/blob/main/Datasets/sample_name_tss_2K.Rdata) a sample value of the relative coverage of 2K region around TSS locations on whole genome wide.  
+
+
+##### Examples
+```
+Rscript INAC_PFE sample_name, input_dir, output_dir, samtools, tss_bed_up3000_1000, tss_bed_down1000_3000, tss_bed_up1000_down1000, tss_bed_up150_down50, tss_pro_table
+```
 
 

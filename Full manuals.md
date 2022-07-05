@@ -45,7 +45,7 @@ Rscript INAC_initial_QC.R sample_name,input_dir,output_dir,samtools
 ‘INAC_QC’ could indicate the fraction of cfDNA fragment size on 30-80, 80-150, 150-220, 220-1000, 1000-longer (bp).
 
 ##### Usage
-INAC_QC(sample_name,input_dir,output_dir,samtools,consensusBlacklist)
+INAC_QC (sample_name,input_dir,output_dir,samtools,consensusBlacklist)
 ##### Arguments
 |arguments|meaning|
 |:--:|:--:|
@@ -69,7 +69,7 @@ Rscript INAC_QC.R sample_name,input_dir,output_dir,samtools,consensusBlacklist
 ‘INAC_FR’ could indicate the counts and fraction of short and long cfDNA fragments on whole genome wide.
 
 ##### Usage
-INAC_FR(sample_name,input_dir,output_dir,samtools,consensusBlacklist)
+INAC_FR (sample_name, input_dir, output_dir, samtools, consensusBlacklist, bin)
 ##### Arguments
 |arguments|meaning|
 |:--:|:--:|
@@ -78,14 +78,15 @@ INAC_FR(sample_name,input_dir,output_dir,samtools,consensusBlacklist)
 |output_dir|the output file path of BAM file|  
 |samtools|the path of samtools|
 |[consensusBlacklist](https://github.com/jacklee2thu/INAC/blob/main/materials/consensusBlacklist.txt)|consensus Blacklist in the materials|
+|[bin](https://github.com/jacklee2thu/INAC/blob/main/materials/bin.txt)|5 mb bins bed file in the materials|
 
 ##### output file
-1. [cfDNA_density.pdf](https://github.com/jacklee2thu/INAC/blob/main/Datasets/cfDNA_density.pdf) the cfDNA fragment size density plot om 0-500 bp.  
-2. [INAC_fraction_QC_barplot.pdf](https://github.com/jacklee2thu/INAC/blob/main/Datasets/INAC_fraction_QC_barplot.pdf) the fraction of cfDNA fragment size on 30-80, 80-150, 150-220, 220-1000, 1000-longer (bp).
+1. [summary_table.txt](https://github.com/jacklee2thu/INAC/blob/main/Datasets/summary_table.txt) a sample value of short (<150 bp), long (>150 bp) cfDNA fragment, ratio and ratio.center in each 5 mb on whole genome wide.  
+2. [all_table.Rdata](https://github.com/jacklee2thu/INAC/blob/main/Datasets/all_table.Rdata) 50 gastric cancer patients and 50 healthy controls fragment ratio file containing GC-corrected values in each 5 mb on whole genome wide.
 
 ##### Examples
 ```
-Rscript INAC_QC.R sample_name,input_dir,output_dir,samtools,consensusBlacklist
+Rscript INAC_FR.R sample_name, input_dir, output_dir, samtools, consensusBlacklist, bin
 ```
 
 

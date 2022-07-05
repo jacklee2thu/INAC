@@ -9,7 +9,7 @@ Taking into consideration of large BAM file size of cfDNA sequencing files and l
 |[INAC_initial_QC](#inac_initial_qc)|QC|BAM|the mapped reads count, coverage, mean depth, mean MAPQ in 24 chromatin and mitochondria|
 |[INAC_QC](#inac_qc)|QC|BAM|the fraction of cfDNA fragment size on 30-80, 80-150, 150-220, 220-1000, 1000-longer (bp)|
 |[INAC_FR](#inac_fr)|Feature|BAM|the counts and fraction of short and long cfDNA fragments on whole genome wide|
-|[INAC_FR_version](#inac_fr_version)|version|feature matrix|the cfDNA fragments ratio on whole genome wide|
+|[INAC_FR_visibility](#inac_fr_visibility)|visibility|feature matrix|the cfDNA fragments ratio on whole genome wide|
 |[INAC_CNV](#inac_cnv)|Feature|BAM|the number of copy number variance of cfDNA on whole genome wide|
 |[INAC_TSS_NDR](#inac_tss_ndr)|Feature|BAM|the relative coverage of NDR around TSS locations|
 |[INAC_TSS_2K](#inac_tss_2k)|Feature|BAM|the relative coverage of 2K region around TSS locations|

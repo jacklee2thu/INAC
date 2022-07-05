@@ -139,4 +139,36 @@ Rscript INAC_CNV sample_name, input_dir, output_dir, samtools, consensusBlacklis
 ```
 
 
+### [INAC_TSS_NDR](https://github.com/jacklee2thu/INAC/blob/main/Rscripts/INAC_TSS_NDR.R)
+##### Description
+‘INAC_TSS_NDR’ could indicate the relative coverage of NDR around TSS locations.
+
+##### Usage
+INAC_TSS_NDR (sample_name, input_dir, output_dir, samtools, tss_bed_up3000_1000, tss_bed_down1000_3000, tss_bed_up1000_down1000, tss_bed_up150_down50, tss_pro_table)
+##### Arguments
+|arguments|meaning|
+|:--:|:--:|
+|sample_name|the name of BAM file|
+|input_dir|the dir path of BAM file|
+|output_dir|the output file path of the relative coverage of NDR file|
+|samtools|the path of samtools|
+|[tss_bed_up3000_1000](https://github.com/jacklee2thu/INAC/blob/main/materials/tss_bed_up3000_1000.bed)|the bed file contains upstream 3000 bp to downstream 1000 bp relative to TSS locations|
+|[tss_bed_down1000_3000](https://github.com/jacklee2thu/INAC/blob/main/materials/tss_bed_down1000_3000.bed)|the bed file contains upstream 1000 bp to downstream 3000 bp relative to TSS locations|
+|[tss_bed_up1000_down1000](https://github.com/jacklee2thu/INAC/blob/main/materials/tss_bed_up1000_down1000.bed)|the bed file contains upstream 1000 bp to downstream 1000 bp relative to TSS locations|
+|[tss_bed_up150_down50](https://github.com/jacklee2thu/INAC/blob/main/materials/tss_bed_up150_down50.bed)|the bed file contains upstream 150 bp to downstream 50 bp relative to TSS locations|
+|[tss_pro_table](https://github.com/jacklee2thu/INAC/blob/main/materials/tss_pro_table.Rdata)|TSS locations information|
+
+##### output file
+1. [sample_name_tss_NDR.Rdata](https://github.com/jacklee2thu/INAC/blob/main/Datasets/sample_name_tss_NDR.Rdata) a sample value of the relative coverage of NDR around TSS locations on whole genome wide.  
+
+
+##### Examples
+```
+Rscript INAC_TSS_NDR sample_name, input_dir, output_dir, samtools, tss_bed_up3000_1000, tss_bed_down1000_3000, tss_bed_up1000_down1000, tss_bed_up150_down50, tss_pro_table
+```
+
+
+
+
+
 

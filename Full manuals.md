@@ -75,21 +75,41 @@ INAC_FR (sample_name, input_dir, output_dir, samtools, consensusBlacklist, bin)
 |:--:|:--:|
 |sample_name|the name of BAM file|
 |input_dir|the dir path of BAM file|
-|output_dir|the output file path of BAM file|  
+|output_dir|the output file path of fragment ratio table|  
 |samtools|the path of samtools|
 |[consensusBlacklist](https://github.com/jacklee2thu/INAC/blob/main/materials/consensusBlacklist.txt)|consensus Blacklist in the materials|
 |[bin](https://github.com/jacklee2thu/INAC/blob/main/materials/bin.txt)|5 mb bins bed file in the materials|
 
 ##### output file
 1. [summary_table.txt](https://github.com/jacklee2thu/INAC/blob/main/Datasets/summary_table.txt) a sample value of short (<150 bp), long (>150 bp) cfDNA fragment, ratio and ratio.center in each 5 mb on whole genome wide.  
-2. [all_table.Rdata](https://github.com/jacklee2thu/INAC/blob/main/Datasets/all_table.Rdata) 50 gastric cancer patients and 50 healthy controls fragment ratio file containing GC-corrected values in each 5 mb on whole genome wide.
+
 
 ##### Examples
 ```
 Rscript INAC_FR.R sample_name, input_dir, output_dir, samtools, consensusBlacklist, bin
 ```
 
+### [INAC_FR_visibility](https://github.com/jacklee2thu/INAC/blob/main/Rscripts/INAC_FR_visibility.R)
+##### Description
+‘INAC_FR_visibility’ could integrate the fragment ratio table and show the different pattern of fragment ratio between cancer patients and healthy controls.
 
+##### Usage
+INAC_FR_visibility (input_dir, output_dir, bin)
+##### Arguments
+|arguments|meaning|
+|:--:|:--:|
+|input_dir|the dir path of fragment ratio table|
+|output_dir|the output file path of integrated fragment ratio table and plots|  
+|[bin](https://github.com/jacklee2thu/INAC/blob/main/materials/bin.txt)|5 mb bins bed file in the materials|
+
+##### output file
+1. [all_table.Rdata](https://github.com/jacklee2thu/INAC/blob/main/Datasets/all_table.Rdata) a sample value of short (<150 bp), long (>150 bp) cfDNA fragment, ratio and other factors in each 5 mb on whole genome wide.  
+2. [INAC_FR_visibility.pdf](https://github.com/jacklee2thu/INAC/blob/main/Datasets/INAC_FR_visibility.pdf) integrated fragment ratio plots.  
+
+##### Examples
+```
+Rscript INAC_FR_visibility input_dir, output_dir, bin
+```
 
 
 

@@ -14,7 +14,7 @@ Taking into consideration of large BAM file size of cfDNA sequencing files and l
 |[INAC_TSS_NDR](#inac_tss_ndr)|Feature|BAM|the relative coverage of NDR around TSS locations|
 |[INAC_TSS_2K](#inac_tss_2k)|Feature|BAM|the relative coverage of 2K region around TSS locations|
 |[INAC_PFE](#inac_pfe)|Feature|BAM|the PFE values around TSS locations|
-|[INAC_ML](#inac_ml)|machine learning|feature matrix|model performance of each feature|
+|[INAC_ML](#inac_ml)|visibility|feature matrix|model performance of each feature|
 
 
 ### [INAC_initial_QC]()
@@ -112,7 +112,31 @@ Rscript INAC_FR_visibility input_dir, output_dir, bin
 ```
 
 
+### [INAC_CNV](https://github.com/jacklee2thu/INAC/blob/main/Rscripts/INAC_CNV.R)
+##### Description
+‘INAC_CNV’ could indicate the number of copy number variance of cfDNA on whole genome wide.
 
+##### Usage
+INAC_CNV (sample_name, input_dir, output_dir, samtools, consensusBlacklist, bin_gc, healthy_standard_copy)
+##### Arguments
+|arguments|meaning|
+|:--:|:--:|
+|sample_name|the name of BAM file|
+|input_dir|the dir path of BAM file|
+|output_dir|the output file path of log2 transformed copy number variance and plots|
+|samtools|the path of samtools|
+|[consensusBlacklist](https://github.com/jacklee2thu/INAC/blob/main/materials/consensusBlacklist.txt)|consensus Blacklist in the materials|
+|[bin_gc](https://github.com/jacklee2thu/INAC/blob/main/materials/bin_gc.txt)|50 kb bins bed file in the materials|
+|[healthy_standard_copy](https://github.com/jacklee2thu/INAC/blob/main/materials/healthy_standard_copy.Rdata)|golden standard of healthy controls|
+
+##### output file
+1. [gastric_copy_number_table.Rdata](https://github.com/jacklee2thu/INAC/blob/main/Datasets/gastric_copy_number_table.Rdata) a sample value of log2 transformed copy number variance in each 50 kb on whole genome wide.  
+2. [gastric_cancer_copy_num_density.pdf](https://github.com/jacklee2thu/INAC/blob/main/Datasets/gastric_cancer_copy_num_density.pdf) the density plot of log2 transformed copy number variance.  
+
+##### Examples
+```
+Rscript INAC_CNV sample_name, input_dir, output_dir, samtools, consensusBlacklist, bin_gc, healthy_standard_copy
+```
 
 
 

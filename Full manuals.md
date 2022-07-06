@@ -237,7 +237,7 @@ INAC_ML (sample_name, input_dir, output_dir, cancer_sample, healthy_sample, seed
 ##### Arguments
 |arguments|meaning|
 |:--:|:--:|
-|sample_name|the file of feature matrix, [example data](https://github.com/jacklee2thu/INAC/blob/main/Features/fragment_ratio_matrix.Rdata) is showed|
+|sample_name|the file of feature matrix, [example data](https://github.com/jacklee2thu/INAC/blob/main/Features/fragment_ratio_matrix.Rdata) is showed. [published data]() containg 50 gastric cancer patients and 50 healthy controls with each feature is here|
 |input_dir|the dir path of feature matrix|
 |output_dir|the output file path of model performance file|
 |cancer_sample|the list of cancer sample names|

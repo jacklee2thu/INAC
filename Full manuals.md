@@ -233,27 +233,26 @@ Rscript INAC_PFE sample_name, input_dir, output_dir, samtools, bedtools, consens
 
 
 ##### Usage
-INAC_ML (sample_name, input_dir, output_dir, samtools, bedtools, consensusBlacklist, tss_bed_up1000_down1000, tss_bed_up1000_up750, tss_bed_down750_down1000, tss_pro_table, report_NBT)
+INAC_ML (sample_name, input_dir, output_dir, cancer_sample, healthy_sample, seed, divide_fraction, choose_method)
 ##### Arguments
 |arguments|meaning|
 |:--:|:--:|
-|sample_name|the name of BAM file|
-|input_dir|the dir path of BAM file|
-|output_dir|the output file path of PFE file|
-|samtools|the path of samtools|
-|bedtools|the path of bedtools|
-|[consensusBlacklist](https://github.com/jacklee2thu/INAC/blob/main/materials/consensusBlacklist.txt)|consensus Blacklist in the materials|
-|[tss_bed_up1000_down1000](https://github.com/jacklee2thu/INAC/blob/main/materials/tss_bed_up1000_down1000.bed)|the bed file contains upstream 1000 bp to downstream 1000 bp relative to TSS locations|
-|[tss_bed_up1000_up750](https://github.com/jacklee2thu/INAC/blob/main/materials/tss_bed_up1000_up750.bed)|the bed file contains upstream 1000 bp to upstream 750 bp relative to TSS locations|
-|[tss_bed_down750_down1000](https://github.com/jacklee2thu/INAC/blob/main/materials/tss_bed_down750_down1000.bed)|the bed file contains downstream 750 bp to downstream 1000 bp relative to TSS locations|
-|[tss_pro_table](https://github.com/jacklee2thu/INAC/blob/main/materials/tss_pro_table.Rdata)|TSS locations information|
-|[report_NBT](https://github.com/jacklee2thu/INAC/blob/main/materials/all.tss.genes.canonical.ensembl75.txt)| NBT reported negative control genes|
+|sample_name|the file of feature matrix, [example data](https://github.com/jacklee2thu/INAC/blob/main/Features/fragment_ratio_matrix.Rdata) is showed|
+|input_dir|the dir path of feature matrix|
+|output_dir|the output file path of model performance file|
+|cancer_sample|the list of cancer sample names|
+|seed|the seed used to divide dataset into training and test datasets|
+|divide_fraction|the fraction used to divide dataset into training and test datasets, such as 1/2, 2/3, 3/4|
+|choose_method|machine learning method, such as 'gbm','rf'. which could be found in [here](http://topepo.github.io/caret/train-models-by-tag.html)|
+
 
 ##### output file
-1. [gastric_cancer_adjust_final_ent.Rdata](https://github.com/jacklee2thu/INAC/blob/main/Datasets/gastric_cancer_adjust_final_ent.Rdata) a sample value of PFE around TSS locations on whole genome wide.  
+1. [train_ROC.pdf](https://github.com/jacklee2thu/INAC/blob/main/Datasets/fragment_size_train_ROC.pdf) the training dataset ROC plot contains AUC value.  
+2. [test_ROC.pdf](https://github.com/jacklee2thu/INAC/blob/main/Datasets/fragment_size_test_ROC.pdf) the test dataset ROC plot contains AUC value. 
+3. [confusion_matrix_test_data.Rdata](https://github.com/jacklee2thu/INAC/blob/main/Datasets/confusion_matrix_fragment_size.Rdata) the test dataset confusion matrix. 
 
 
 ##### Examples
 ```
-Rscript INAC_PFE sample_name, input_dir, output_dir, samtools, bedtools, consensusBlacklist, tss_bed_up1000_down1000, tss_bed_up1000_up750, tss_bed_down750_down1000, tss_pro_table, report_NBT
+Rscript INAC_ML sample_name, input_dir, output_dir, cancer_sample, healthy_sample, seed, divide_fraction, choose_method
 ```

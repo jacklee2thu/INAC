@@ -2,7 +2,7 @@
 ## *Jie Li & Xun Lan*
 
 ## INAC function
-Taking into consideration of large BAM file size of cfDNA sequencing files and long running process, We used a downsample example cfDNA BAM file to show the input and output of INAC function. Of course, the final processed output files of each feature also be supported in the [Datasets](https://github.com/jacklee2thu/INAC/tree/main/Datasets). (Part of INAC functions is designed to be run on Unix-based operating systems such as macOS and linux)
+Taking into consideration of large BAM file size of cfDNA sequencing files and long running process, We used sample case file to show the input and output of INAC function. Part of INAC functions is designed to be run on Unix-based operating systems such as macOS and linux.
 
 |Function name|Type|Input files|main out|
 |:--:|:--:|:--:|:--:|

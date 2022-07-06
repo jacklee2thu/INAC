@@ -10,13 +10,15 @@ we also recommend reading the [publication]() to get a better idea of what INAC 
 
 |Function name|Type|Input files|main out|
 |:--:|:--:|:--:|:--:|
+|INAC_initial_QC|QC|BAM|the mapped reads count, coverage, mean depth, mean MAPQ in 24 chromatin and mitochondria|
 |INAC_QC|QC|BAM|the fraction of cfDNA fragment size on 30-80, 80-150, 150-220, 220-1000, 1000-longer (bp)|
 |INAC_FR|Feature|BAM|the counts and fraction of short and long cfDNA fragments on whole genome wide|
+|INAC_FR_visibility|visibility|feature matrix|the cfDNA fragments ratio on whole genome wide|
 |INAC_CNV|Feature|BAM|the number of copy number variance of cfDNA on whole genome wide|
 |INAC_TSS_NDR|Feature|BAM|the relative coverage of NDR around TSS locations|
 |INAC_TSS_2K|Feature|BAM|the relative coverage of 2K region around TSS locations|
 |INAC_PFE|Feature|BAM|the PFE values around TSS locations|
-|INAC_ML|machine learning|feature matrix|model performance of each feature|
+|INAC_ML|visibility|feature matrix|model performance of each feature|
 the details and usage of INAC functions are shown in the [full manuals](https://github.com/jacklee2thu/INAC/blob/main/Full%20manuals.md).
 
 ## INAC citation

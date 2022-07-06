@@ -256,3 +256,11 @@ INAC_ML (sample_name, input_dir, output_dir, cancer_sample, healthy_sample, seed
 ```
 Rscript INAC_ML sample_name, input_dir, output_dir, cancer_sample, healthy_sample, seed, divide_fraction, choose_method
 ```
+
+
+### sessionInfo
+
+
+
+
+

@@ -82,6 +82,7 @@ INAC_FR (sample_name, input_dir, output_dir, samtools, consensusBlacklist, bin)
 
 ##### output file
 1. [summary_table.txt](https://github.com/jacklee2thu/INAC/blob/main/Datasets/summary_table.txt) a sample value of short (<150 bp), long (>150 bp) cfDNA fragment, ratio and ratio.center in each 5 mb on whole genome wide.  
+2. sample_name_table.Rdata summary_table.txt transfored into Rdata form.  
 
 
 ##### Examples

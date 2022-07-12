@@ -37,7 +37,7 @@ INAC_initial_QC (sample_name,input_dir,output_dir,samtools)
 
 ##### Examples
 ```
-Rscript INAC_initial_QC.R sample_name,input_dir,output_dir,samtools
+Rscript INAC_initial_QC.R sample_name input_dir output_dir samtools
 ```
 
 ### [INAC_QC](https://github.com/jacklee2thu/INAC/blob/main/Rscripts/INAC_QC.R)
@@ -61,7 +61,7 @@ INAC_QC (sample_name,input_dir,output_dir,samtools,consensusBlacklist)
 
 ##### Examples
 ```
-Rscript INAC_QC.R sample_name,input_dir,output_dir,samtools,consensusBlacklist
+Rscript INAC_QC.R sample_name input_dir output_dir samtools consensusBlacklist
 ```
 
 ### [INAC_FR](https://github.com/jacklee2thu/INAC/blob/main/Rscripts/INAC_FR.R)
@@ -86,7 +86,7 @@ INAC_FR (sample_name, input_dir, output_dir, samtools, consensusBlacklist, bin)
 
 ##### Examples
 ```
-Rscript INAC_FR.R sample_name, input_dir, output_dir, samtools, consensusBlacklist, bin
+Rscript INAC_FR.R sample_name input_dir output_dir samtools consensusBlacklist bin
 ```
 
 ### [INAC_FR_visibility](https://github.com/jacklee2thu/INAC/blob/main/Rscripts/INAC_FR_visibility.R)
@@ -108,7 +108,7 @@ INAC_FR_visibility (input_dir, output_dir, bin)
 
 ##### Examples
 ```
-Rscript INAC_FR_visibility input_dir, output_dir, bin
+Rscript INAC_FR_visibility input_dir output_dir bin
 ```
 
 
@@ -135,7 +135,7 @@ INAC_CNV (sample_name, input_dir, output_dir, samtools, consensusBlacklist, bin_
 
 ##### Examples
 ```
-Rscript INAC_CNV sample_name, input_dir, output_dir, samtools, consensusBlacklist, bin_gc, healthy_standard_copy
+Rscript INAC_CNV sample_name input_dir output_dir samtools consensusBlacklist bin_gc healthy_standard_copy
 ```
 
 
@@ -164,7 +164,7 @@ INAC_TSS_NDR (sample_name, input_dir, output_dir, samtools, tss_bed_up3000_1000,
 
 ##### Examples
 ```
-Rscript INAC_TSS_NDR sample_name, input_dir, output_dir, samtools, tss_bed_up3000_1000, tss_bed_down1000_3000, tss_bed_up1000_down1000, tss_bed_up150_down50, tss_pro_table
+Rscript INAC_TSS_NDR sample_name input_dir output_dir samtools tss_bed_up3000_1000 tss_bed_down1000_3000 tss_bed_up1000_down1000 tss_bed_up150_down50 tss_pro_table
 ```
 
 
@@ -193,7 +193,7 @@ INAC_TSS_2K (sample_name, input_dir, output_dir, samtools, tss_bed_up3000_1000, 
 
 ##### Examples
 ```
-Rscript INAC_TSS_2K sample_name, input_dir, output_dir, samtools, tss_bed_up3000_1000, tss_bed_down1000_3000, tss_bed_up1000_down1000, tss_bed_up150_down50, tss_pro_table
+Rscript INAC_TSS_2K sample_name input_dir output_dir samtools tss_bed_up3000_1000 tss_bed_down1000_3000 tss_bed_up1000_down1000 tss_bed_up150_down50 tss_pro_table
 ```
 
 
@@ -224,7 +224,7 @@ INAC_PFE (sample_name, input_dir, output_dir, samtools, bedtools, consensusBlack
 
 ##### Examples
 ```
-Rscript INAC_PFE sample_name, input_dir, output_dir, samtools, bedtools, consensusBlacklist, tss_bed_up1000_down1000, tss_bed_up1000_up750, tss_bed_down750_down1000, tss_pro_table, report_NBT
+Rscript INAC_PFE sample_name input_dir output_dir samtools bedtools consensusBlacklist tss_bed_up1000_down1000 tss_bed_up1000_up750 tss_bed_down750_down1000 tss_pro_table report_NBT
 ```
 
 ### [INAC_ML](https://github.com/jacklee2thu/INAC/blob/main/Rscripts/INAC_ML.R)
@@ -254,7 +254,7 @@ INAC_ML (sample_name, input_dir, output_dir, cancer_sample, healthy_sample, seed
 
 ##### Examples
 ```
-Rscript INAC_ML sample_name, input_dir, output_dir, cancer_sample, healthy_sample, seed, divide_fraction, choose_method
+Rscript INAC_ML sample_name input_dir output_dir cancer_sample healthy_sample seed divide_fraction choose_method
 ```
 
 

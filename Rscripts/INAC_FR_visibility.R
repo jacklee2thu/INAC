@@ -1,10 +1,9 @@
 
 ###### INAC fragment size ratio
 argv <- commandArgs(TRUE)
-sample_name<-as.character(argv[1])
-input_dir<-as.character(argv[2])
-output_dir<-as.character(argv[3])
-bin<-as.character(argv[4])
+input_dir<-as.character(argv[1])
+output_dir<-as.character(argv[2])
+bin<-as.character(argv[3])
 
 
 options(stringsAsFactors=F)

@@ -71,5 +71,5 @@ summary_table<-rbind(summary_table,temp_info_chr)
 summary_table$ratio.center<-scale(summary_table$ratio,scale=F)
 
 write.table(summary_table,file='summary_table.txt',sep='\t',row.names = F,col.names = T,quote = F)
-save(summary_table,file=paste0(sample_name'_table.Rdata'))
+save(summary_table,file=paste0(sample_name,'_table.Rdata'))
 

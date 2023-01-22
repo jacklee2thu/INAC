@@ -18,6 +18,7 @@ Taking into consideration of large BAM file size of cfDNA sequencing files and l
 |[INAC_FR](#inac_fr)|Feature|BAM|the counts and fraction of short and long cfDNA fragments on whole genome wide|
 |[INAC_FR_visibility](#inac_fr_visibility)|visibility|feature matrix|the cfDNA fragments ratio on whole genome wide|
 |[INAC_CNV](#inac_cnv)|Feature|BAM|the number of copy number variance of cfDNA on whole genome wide|
+|[INAC_TSS_conventional](#inac_tss_conventional)|Feature|BAM|the relative coverage of conventional region around TSS locations|
 |[INAC_TSS_NDR](#inac_tss_ndr)|Feature|BAM|the relative coverage of NDR around TSS locations|
 |[INAC_TSS_2K](#inac_tss_2k)|Feature|BAM|the relative coverage of 2K region around TSS locations|
 |[INAC_PFE](#inac_pfe)|Feature|BAM|the PFE values around TSS locations|
@@ -144,6 +145,32 @@ INAC_CNV (sample_name, input_dir, output_dir, samtools, consensusBlacklist, bin_
 ##### Examples
 ```
 Rscript INAC_CNV sample_name input_dir output_dir samtools consensusBlacklist bin_gc healthy_standard_copy
+```
+
+### [INAC_TSS_Conventional](https://github.com/jacklee2thu/INAC/blob/main/Rscripts/INAC_TSS_conventional.R)
+##### Description
+‘INAC_TSS_conventional’ could indicate the relative coverage ofconventional region around TSS locations.
+
+##### Usage
+INAC_TSS_conventional (sample_name, input_dir, output_dir, samtools, tss_bed_up1000_down1000, tss_bed_up150_down50, tss_pro_table)
+##### Arguments
+|arguments|meaning|
+|:--:|:--:|
+|sample_name|the name of BAM file|
+|input_dir|the dir path of BAM file|
+|output_dir|the output file path of the relative coverage of NDR file|
+|samtools|the path of samtools|
+|[tss_bed_up1000_down1000](https://github.com/jacklee2thu/INAC/blob/main/materials/tss_bed_up1000_down1000.bed)|the bed file contains upstream 1000 bp to downstream 1000 bp relative to TSS locations|
+|[tss_bed_up150_down50](https://github.com/jacklee2thu/INAC/blob/main/materials/tss_bed_up150_down50.bed)|the bed file contains upstream 150 bp to downstream 50 bp relative to TSS locations|
+|[tss_pro_table](https://github.com/jacklee2thu/INAC/blob/main/materials/tss_pro_table.Rdata)|TSS locations information|
+
+##### output file
+1. [sample_name_tss_conventional.Rdata](https://github.com/jacklee2thu/INAC/blob/main/Datasets/sample_name_tss_conventional.Rdata) a sample value of the relative coverage of conventional region around TSS locations on whole genome wide.  
+
+
+##### Examples
+```
+Rscript INAC_TSS_conventional sample_name input_dir output_dir samtools tss_bed_up1000_down1000 tss_bed_up150_down50 tss_pro_table
 ```
 
 

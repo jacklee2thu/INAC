@@ -46,6 +46,9 @@ colnames(gastric_table)[1]<-"sample_name"
 setwd(output_dir)
 save(gastric_table,file="all_table.Rdata")
 
+if(max(na.omit(gastric_table$ratio<0.05))){
+print('the sample is high risk of hemolysis')
+}
 ###
 load('all_table.Rdata')
 all_summary_table<-gastric_table
